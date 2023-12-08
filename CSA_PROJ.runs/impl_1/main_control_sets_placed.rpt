@@ -1,0 +1,122 @@
+Copyright 1986-2018 Xilinx, Inc. All Rights Reserved.
+------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2018.3 (win64) Build 2405991 Thu Dec  6 23:38:27 MST 2018
+| Date         : Fri Dec  8 15:59:46 2023
+| Host         : LAPTOP-QGN0VRL6 running 64-bit major release  (build 9200)
+| Command      : report_control_sets -verbose -file main_control_sets_placed.rpt
+| Design       : main
+| Device       : xc7a35t
+------------------------------------------------------------------------------------
+
+Control Set Information
+
+Table of Contents
+-----------------
+1. Summary
+2. Histogram
+3. Flip-Flop Distribution
+4. Detailed Control Set Information
+
+1. Summary
+----------
+
++----------------------------------------------------------+-------+
+|                          Status                          | Count |
++----------------------------------------------------------+-------+
+| Number of unique control sets                            |    49 |
+| Unused register locations in slices containing registers |   249 |
++----------------------------------------------------------+-------+
+
+
+2. Histogram
+------------
+
++--------+--------------+
+| Fanout | Control Sets |
++--------+--------------+
+|      1 |           27 |
+|      2 |            1 |
+|      3 |            1 |
+|      4 |            5 |
+|      5 |            1 |
+|      6 |            1 |
+|      7 |            1 |
+|      8 |            4 |
+|     10 |            3 |
+|    16+ |            5 |
++--------+--------------+
+
+
+3. Flip-Flop Distribution
+-------------------------
+
++--------------+-----------------------+------------------------+-----------------+--------------+
+| Clock Enable | Synchronous Set/Reset | Asynchronous Set/Reset | Total Registers | Total Slices |
++--------------+-----------------------+------------------------+-----------------+--------------+
+| No           | No                    | No                     |              41 |           31 |
+| No           | No                    | Yes                    |               5 |            2 |
+| No           | Yes                   | No                     |              77 |           25 |
+| Yes          | No                    | No                     |              44 |           21 |
+| Yes          | No                    | Yes                    |             127 |           27 |
+| Yes          | Yes                   | No                     |              17 |            7 |
++--------------+-----------------------+------------------------+-----------------+--------------+
+
+
+4. Detailed Control Set Information
+-----------------------------------
+
++---------------------------------+-------------------------------------------+-----------------------------------------------+------------------+----------------+
+|           Clock Signal          |               Enable Signal               |                Set/Reset Signal               | Slice Load Count | Bel Load Count |
++---------------------------------+-------------------------------------------+-----------------------------------------------+------------------+----------------+
+|  genblk1[11].div1/clk_out_reg_0 |                                           |                                               |                1 |              1 |
+|  genblk1[10].div1/clk_out_reg_0 |                                           |                                               |                1 |              1 |
+|  genblk1[0].div1/clk_out_reg_0  |                                           |                                               |                1 |              1 |
+|  genblk1[2].div1/clk_out_reg_0  |                                           |                                               |                1 |              1 |
+|  genblk1[4].div1/clk_out_reg_0  |                                           |                                               |                1 |              1 |
+|  genblk1[3].div1/clk_out_reg_0  |                                           |                                               |                1 |              1 |
+|  genblk1[13].div1/clk_out_reg_0 |                                           |                                               |                1 |              1 |
+|  genblk1[12].div1/clk_out_reg_0 |                                           |                                               |                1 |              1 |
+|  genblk1[9].div1/clk_out_reg_0  |                                           |                                               |                1 |              1 |
+|  genblk1[14].div1/clk_out_reg_0 |                                           |                                               |                1 |              1 |
+|  genblk1[8].div1/clk_out_reg_0  |                                           |                                               |                1 |              1 |
+|  genblk1[7].div1/clk_out_reg_0  |                                           |                                               |                1 |              1 |
+|  genblk1[5].div1/clk_out_reg_0  |                                           |                                               |                1 |              1 |
+|  genblk1[6].div1/clk_out_reg_0  |                                           |                                               |                1 |              1 |
+|  genblk1[15].div1/clk_out_reg_0 |                                           |                                               |                1 |              1 |
+|  genblk1[16].div1/clk_out_reg_0 |                                           |                                               |                1 |              1 |
+|  baud_BUFG                      | keyboardInput/receiver/data_out[3]        |                                               |                1 |              1 |
+|  genblk1[1].div1/clk_out_reg_0  |                                           |                                               |                1 |              1 |
+|  genblk1[17].div1/clk_out_reg_0 |                                           |                                               |                1 |              1 |
+|  baud_BUFG                      | keyboardInput/receiver/data_out[7]        |                                               |                1 |              1 |
+|  baud_BUFG                      | keyboardInput/receiver/data_out[1]        |                                               |                1 |              1 |
+|  baud_BUFG                      | keyboardInput/receiver/data_out[0]        |                                               |                1 |              1 |
+|  baud_BUFG                      | keyboardInput/transmitter/bit_out         | keyboardInput/transmitter/bit_out0            |                1 |              1 |
+|  baud_BUFG                      | keyboardInput/receiver/data_out[6]        |                                               |                1 |              1 |
+|  baud_BUFG                      | keyboardInput/receiver/data_out[5]        |                                               |                1 |              1 |
+|  baud_BUFG                      | keyboardInput/receiver/data_out[2]        |                                               |                1 |              1 |
+|  baud_BUFG                      | keyboardInput/receiver/data_out[4]        |                                               |                1 |              1 |
+|  genblk1[18].div1/CLK           |                                           |                                               |                1 |              2 |
+|  clk_IBUF_BUFG                  |                                           | vga_render/h_count_reg_reg[7]_0[0]            |                1 |              3 |
+|  keyboardInput/transmitter/sent |                                           |                                               |                2 |              4 |
+|  clk_IBUF_BUFG                  | animeLogic/E[0]                           | animeLogic/SR[0]                              |                1 |              4 |
+|  clk_IBUF_BUFG                  | animeLogic/E[1]                           | btnU_IBUF                                     |                2 |              4 |
+|  clk_IBUF_BUFG                  | animeLogic/player1Score_reg[4][1]         | btnU_IBUF                                     |                2 |              4 |
+|  clk_IBUF_BUFG                  | animeLogic/player1Score_reg[4][0]         | animeLogic/btnU[0]                            |                1 |              4 |
+|  clk_IBUF_BUFG                  |                                           | btnU_IBUF                                     |                2 |              5 |
+|  clk_IBUF_BUFG                  |                                           | vga_render/h_count_reg_reg[7]_0[1]            |                4 |              6 |
+|  clk_IBUF_BUFG                  |                                           |                                               |                6 |              7 |
+|  baud_BUFG                      |                                           | keyboardInput/receiver/count[7]_i_1_n_0       |                4 |              8 |
+|  baud_BUFG                      |                                           | keyboardInput/transmitter/count[7]_i_1__0_n_0 |                2 |              8 |
+|  baud_BUFG                      | keyboardInput/transmitter/temp[7]_i_1_n_0 |                                               |                2 |              8 |
+|  baud_BUFG                      | keyboardInput/receiver/E[0]               |                                               |                1 |              8 |
+|  baud_BUFG                      |                                           |                                               |                4 |             10 |
+|  clk_IBUF_BUFG                  | vga_render/v_count_reg0                   |                                               |                6 |             10 |
+|  clk_IBUF_BUFG                  | vga_render/h_count_reg[9]_i_1_n_0         |                                               |                4 |             10 |
+|  clk_IBUF_BUFG                  |                                           | animeLogic/refreshReg[19]_i_1_n_0             |                6 |             20 |
+|  clk_IBUF_BUFG                  | animeLogic/leftPaddleY[0]_i_1_n_0         | btnU_IBUF                                     |                8 |             32 |
+|  clk_IBUF_BUFG                  |                                           | keyboardInput/baudrate_gen/clear              |                8 |             32 |
+|  clk_IBUF_BUFG                  | animeLogic/rightPaddleY[0]_i_1_n_0        | btnU_IBUF                                     |                8 |             32 |
+|  clk_IBUF_BUFG                  | animeLogic/refreshRate                    | btnU_IBUF                                     |               11 |             63 |
++---------------------------------+-------------------------------------------+-----------------------------------------------+------------------+----------------+
+
+
